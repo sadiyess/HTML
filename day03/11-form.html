@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tagi</title>
+  </head>
+  <body>
+    <form
+      action="/user/login"
+      method="post"
+      novalidate
+      enctype="multipart/form-data"
+    >
+      <label for="">isim</label>
+      <br />
+      <input type="text" required />
+      <br /><br />
+      <label for="">soyisim</label>
+      <br />
+      <input type="text" />
+      <br /><br />
+      <label for="mail">e-mail</label>
+      <br />
+      <input
+        type="email"
+        name="email"
+        id="mail"
+        placeholder=" gmail.com olmali"
+        required
+      />
+      <br /><br />
+      <label for="password">Sifre</label>
+      <br />
+      <input
+        type="password"
+        id="password"
+        placeholder="sifreni gir"
+        required
+        minlength="5"
+        maxlength="15"
+      />
+      <br /><br />
+      <label for="">Number</label>
+      <br />
+      <input type="number" id="" />
+      <br /><br />
+      <label for="">Search</label>
+      <br />
+      <input type="search" id="" />
+      <br /><br />
+      <label for="">Website</label>
+      <br />
+      <input type="url" id="" />
+      <br /><br />
+      <label for="">Numara</label>
+      <br />
+      <input type="tel" id="" />
+      <br /><br />
+      <label for="">Secret</label>
+      <br />
+      <input type="hidden" id="" />
+      <br /><br />
+      <input type="radio" id="male" name="gender" />
+      <label for="male">Erkek</label>
+      <input type="radio" id="female" name="gender" />
+      <label for="female">Kadin</label>
+      <input type="radio" id="none" name="gender" />
+      <label for="none">Belirtmek istemiyorum</label>
+      <br /><br />
+      <div style="text-align: center">Hobiler</div>
+      <input type="checkbox" id="chk" name="hobiler" />
+      <label for="chk">Hopluyorum</label>
+      <br />
+      <input type="checkbox" id="chk" name="hobiler" />
+      <label for="chk">Kitap okuyorum</label>
+      <br />
+      <input type="checkbox" id="chk" name="hobiler" />
+      <label for="chk">Zipliyorum</label>
+      <br />
+      <input type="checkbox" id="chk" name="hobiler" />
+      <label for="chk">Pencereden atliyorum</label>
+      <br />
+      <br />
+      <div style="text-align: center">Maas Sozlesmesi</div>
+      <br />
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, iste
+        quibusdam adipisci reiciendis, ab inventore labore ex asperiores saepe
+        molestiae ad dolorem iure quo, magni qui voluptates ratione dolores?
+        Blanditiis.
+      </div>
+      <br />
+      <input type="checkbox" id="chk" name="maas" checked disabled />
+      <label for="chk">Okudum, anladim, maasimi eksiksiz aldim</label>
+      <br />
+      <br />
+      <input type="file" name="dosya" id="cv" />
+      <br />
+      <br />
+      <input type="color" />
+      <br />
+      <br />
+      <input type="datetime-local" />
+      <br />
+      <br />
+      <input type="date" />
+      <br />
+      <br />
+      <input type="range" />
+      <br />
+      <br />
+      <input type="week" />
+      <br />
+      <br />
+      <input type="month" />
+      <br />
+      <br />
+      <select name="cities" id="" multiple size="5">
+        <option value="selct" disabled>Bir sehir seciniz</option>
+        <option value="34">Istanbul</option>
+        <option value="06">Ankara</option>
+        <option value="35">Izmir</option>
+        <option value="58">Sivas</option>
+        <option value="03">Adana</option>
+        <option value="19">Corum</option>
+      </select>
+      <br />
+      <br />
+      <textarea name="txt" id="txt1" cols="30" rows="10"></textarea>
+      <br />
+      <br />
+      <input type="button" value="Button" />
+      <input type="submit" value="submit" />
+      <input type="reset" value="clear" />
+      <button class="btn">Save</button>
+    </form>
+  </body>
+</html>
